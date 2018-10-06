@@ -13,8 +13,8 @@ def get_year_progress():
     dt = pendulum.now()
     percent = year_progress(dt)
     year = dt.year
-    return f'你的 {year} 使用进度：%\n' \
-           f'%\n' \
+    return f'你的 {year} 使用进度：%{percent}\n' \
+           f'\n\n' \
            f'{make_progress_string(percent)}'
 
 
